@@ -4,6 +4,7 @@ import { Queue } from "bullmq";
 import { redisConfig, config } from "./config.js";
 import morgan from "morgan";
 import helmet from "helmet";
+import logger from "./utils/logger.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -20,5 +21,5 @@ app.get("/", (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+    logger.log("info", "Server running at http://localhost:3000")
 });

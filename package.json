@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
+    "dev": "nodemon app.js",
     "worker": "node worker.js",
     "queue": "node queue.js",
-    "dev": "npx concurrently \"npm start\" \"npm run worker\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -26,6 +26,7 @@
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.1",
     "nodemon": "^3.1.11",
-    "winston": "^3.18.3"
+    "winston": "^3.18.3",
+    "winston-mongodb": "^7.0.1"
   }
 }

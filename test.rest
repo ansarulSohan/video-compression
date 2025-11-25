@@ -1,6 +1,0 @@
-POST http://localhost:3000/transcode
-content-type: application/json
-
-{
-    "fileName": "movie1.mp4"
-}
